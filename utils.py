@@ -116,9 +116,11 @@ def draw_box(boxes,im,crop_dim):
         if bot   > h - 1:   bot = h - 1
         thick = int((h + w) // 150)
         
+        '''
         fig,ax = plt.subplots(1)
         ax.imshow(imgcv)
         rect = patches.Rectangle((left, top),(bot-top),(right-left),linewidth=thick,edgecolor='r',facecolor='none')
         ax.add_patch(rect)
-
+        '''
+        
     return imgcv
